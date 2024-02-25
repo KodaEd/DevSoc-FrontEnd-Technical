@@ -1,3 +1,4 @@
+import DropDownBox from "../components/DropDownBox";
 import Header from "../components/HomeHeader";
 import SearchBox from "../components/SearchBox";
 
@@ -6,5 +7,6 @@ export default function Home() {
     <Header/>
 
     <SearchBox/>
+    <DropDownBox/>
   </div>;
 }
