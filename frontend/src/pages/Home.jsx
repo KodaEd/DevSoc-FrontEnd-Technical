@@ -10,7 +10,9 @@ export default function Home() {
 
       <SearchBox />
       <DropDownBox />
-      <div className="m-4">
+      <div className="my-4 grid sm:grid-cols-1 lg:grid-cols-3 gap-4">
+        <CourseContainer />
+        <CourseContainer />
         <CourseContainer />
       </div>
     </div>

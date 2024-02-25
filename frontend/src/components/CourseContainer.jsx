@@ -2,11 +2,19 @@ import Bubble from "./Bubble";
 import ReviewStars from "./ReviewStars";
 
 export default function CourseContainer() {
-  return <div className="shadow-xl p-4 rounded-md">
-    {/* Course Title */}
-    <p className="text-2xl font-extrabold">COMP1511</p>
-    <ReviewStars />
-    <p className="text-sm">Programing Fundemantals</p>
-    <Bubble/>
-  </div>
+  return (
+    <div className="shadow-2xl p-4 rounded-lg">
+      {/* Course Title */}
+      <div className="flex justify-between mb-1">
+        <p className="text-2xl font-extrabold">COMP1511</p>
+        <ReviewStars />
+      </div>
+      <p className="text-sm mb-5">Programing Fundemantals</p>
+      <div className="flex gap-2">
+        <Bubble />
+        <Bubble />
+        <Bubble />
+      </div>
+    </div>
+  );
 }
