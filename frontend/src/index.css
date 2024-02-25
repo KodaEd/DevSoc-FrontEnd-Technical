@@ -4,13 +4,14 @@
 
 #root {
   height: 100%;
-  width: 100%;
+  width: 100vw; /* Use viewport width unit */
 }
+
 
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%;
+  width: 100vw; /* Use viewport width unit */
 }

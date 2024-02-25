@@ -25,7 +25,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="w-full h-full">
+    <div className="mx-20 py-20">
       <Header />
       <SearchBox />
       <DropDownBox />
