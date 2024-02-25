@@ -7,17 +7,14 @@ import { getCourses } from "../utils/data";
 
 export default function Home() {
   const [courses, setCourses] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   // Trying to demonstrate my understanding of async useEffect
   useEffect(() => {
     const fetchCourses = async () => {
       const data = await getCourses();
-      // Trying to show my skeleton loading
       setTimeout(() => {
         console.log(data);
         setCourses(data);
-        setLoading(false);
       }, 500);
     };
 
@@ -25,7 +22,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="mx-20 py-20">
+    <div className="mx-20 py-20 snap-y">
       <Header />
       <SearchBox />
       <DropDownBox />
