@@ -9,7 +9,6 @@ export default function App() {
       <div className="ml-20">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/course/:id" element={<Home />} />
         </Routes>
       </div>
     </BrowserRouter>
