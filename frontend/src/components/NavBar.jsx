@@ -6,20 +6,23 @@ import moon from "../assets/moon.svg";
 import arrowRightEndOnRectangle from "../assets/arrow-right-end-on-rectangle.svg";
 import barsArrowDown from "../assets/bars-arrow-down.svg";
 import NavBarButton from "./NavBarButton";
+import { useNavigate } from "react-router-dom";
 
-export default function NavBar() {
+export default function NavBar({toggleDarkMode, darkMode}) {
+  const navigation = useNavigate();
+
   const topButtons = [
     {
       svgSrc: unilectives,
-      onClick: () => {},
+      onClick: () => {navigation("/")},
     },
     {
       svgSrc: bookOpen,
-      onClick: () => {},
+      onClick: () => {navigation("/")},
     },
     {
       svgSrc: sheildCheck,
-      onClick: () => {},
+      onClick: () => {navigation("/terms-and-conditions")},
     },
   ];
 
@@ -30,20 +33,20 @@ export default function NavBar() {
     },
     {
       svgSrc: userCircle,
-      onClick: () => {},
+      onClick: () => {navigation("/login")},
     },
     {
       svgSrc: moon,
-      onClick: () => {},
+      onClick: () => {toggleDarkMode()},
     },
     {
       svgSrc: arrowRightEndOnRectangle,
-      onClick: () => {},
+      onClick: () => {navigation("/login")},
     },
   ];
 
   return (
-    <div className="bg-gray-100 fixed w-20 h-full max-h-screen">
+    <div className={darkMode ? "dark bg-gray-100 dark:bg-slate-400 fixed w-20 h-full max-h-screen" : "bg-gray-100 fixed w-20 h-full max-h-screen"}>
       <div className="flex flex-col items-center h-full justify-between">
         <div className="flex flex-col items-center pt-10 gap-4">
           {topButtons.map((button, key) => {

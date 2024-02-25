@@ -3,13 +3,15 @@
 Technologies used
 * React
 * Tailwind
-* react-router-dom (implemented but didnt use )
+* react-router-dom
 
 Things i want to highlight
 * Reusable Components
 * Custom Components (didnt use any ui libraries)
 * Component Abstraction
 * Project structure
+* Nav Buttons Work to redirect to pages
+* Implemented Dark Mode (dark mode of tailwind isnt working normally, so i had to manually pass it to children componentes, see my previous commit to see project without the implementation)
 
 
 Please change directiories to ```/frontend``` by 
