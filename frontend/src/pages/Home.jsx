@@ -1,3 +1,5 @@
 export default function Home() {
-  return <div className="text-4xl text-center">Home</div>;
+  return <div className="w-full h-full">
+    Home !
+  </div>;
 }
