@@ -7,6 +7,7 @@ export default function App() {
       {/* <NavBar /> */}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/course/:id" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
