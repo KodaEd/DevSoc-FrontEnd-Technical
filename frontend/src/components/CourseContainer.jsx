@@ -1,7 +1,7 @@
 import Bubble from "./Bubble";
 import ReviewStars from "./ReviewStars";
 
-export default function CourseContainer() {
+export default function CourseContainer(course, index) {
   return (
     <div className="shadow-2xl p-4 rounded-lg">
       {/* Course Title */}
